@@ -1,0 +1,16 @@
+
+.item {
+  font-style: italic;
+  color: aliceblue;
+  margin: 20px 0;
+}
+
+.item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.item span {
+  padding-left: 20px;
+}

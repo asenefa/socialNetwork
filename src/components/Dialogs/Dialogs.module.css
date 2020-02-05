@@ -1,0 +1,19 @@
+.dialogs{
+    display: grid;
+    grid-template-columns: 3fr 10fr;
+}
+.dialogs a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+a.active{
+    color: gold;
+}
+.dialogs img{
+    width: 50px;
+    border-radius: 25px;
+}
+.dialogs div>div{
+    margin: 10px;
+}

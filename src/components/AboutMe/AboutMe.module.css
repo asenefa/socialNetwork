@@ -1,0 +1,10 @@
+.aboutMe{
+  grid-area: me;
+  background-color: rgb(251, 255, 0);
+  padding: 10px 30px;
+
+}
+.aboutMe > img {
+  border: 10px solid white;
+  margin: 20px 20px 20px 0;
+}

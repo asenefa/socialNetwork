@@ -1,0 +1,21 @@
+.nav{
+  padding: 15px 0 ;
+  grid-area: navbar;
+  /* text-align: center; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0 70px;
+}
+
+.nav a{
+  color: rgb(29, 28, 28);
+  text-decoration: none;
+}
+a.activeLink {
+  color: gold;
+}
