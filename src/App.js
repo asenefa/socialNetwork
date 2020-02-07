@@ -11,21 +11,23 @@ import {  Route } from 'react-router-dom'
 
 
 const App = (props) => {
+  console.log(props)
   return (
       <div className='app-wrapper'>
         <Navbar />
-        <AboutMe state={props.appState.sidebar}/>
+        <AboutMe state={props.state.sidebar}/>
         <div className='app-wrapper-contetnt'>
           <Route 
             path='/myposts' 
             render={ () => <MyPosts 
-            state={props.appState.profilePage}
-            addPost={props.addPost} />} 
+            profilePage={props.state.profilePage}
+            addPost={props.addPost}
+            updateNewPost={props.updateNewPost} />} 
           />
           <Route 
             path='/dialogs' 
             render={ () => <Dialogs 
-            state={props.appState.dialogsPage} />} 
+            state={props.state.dialogsPage} />} 
           />
           <Route path='/news' render={ () => <News />} />
           <Route path='/music' render={ () => <Music />} />
