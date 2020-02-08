@@ -1,6 +1,6 @@
-import {renderTree} from './../render.js'
-
-
+let renderTree = () => {
+  console.log('lol')
+}
 
 let state = {
   profilePage: {
@@ -35,7 +35,7 @@ let state = {
 }
 
 window.state = state;
-export let addPost = () => {
+export const addPost = () => {
   state.profilePage.postsData.push(
     {
       id: 4,
@@ -47,9 +47,13 @@ export let addPost = () => {
   renderTree(state)
 }
 
-export let updateNewPost = (newPostText) => {
+export const updateNewPost = (newPostText) => {
   state.profilePage.newPostText = newPostText;
   renderTree(state)
+}
+
+export const subscribe = (observer) => {
+  renderTree = observer
 }
 
 export default state;
