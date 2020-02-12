@@ -17,16 +17,17 @@ const MyPosts = (props) => {
   )
 
   let newPostEl = React.createRef();//cсылка на элемент, где будет происходить событие (onChange onClick) 
+
   let renderNewPost = () => {
-    // let text = props.updateNewPost;
-    props.addPost(); //функция ф пропсах 
-    // props.updateNewPost(''); //после добавления сделать пустую текстарию
-    // alert(text);
+    props.dispatch({type:'ADD-POST'})
+    // props.addPost(); //функция ф пропсах 
+
   };
 
   let onPostChange = () => {
     let text = newPostEl.current.value;
-    props.updateNewPost(text);
+    props.dispatch({type:'UPDATE-NEW=POST', newPostText: text})
+    // props.updateNewPost(text);
     // props.updateNewPost('');
 
     console.log(text)
